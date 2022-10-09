@@ -128,7 +128,8 @@ The only advantage of bubble sorting is its checking if an array is sorted.
 ```
 
 <h2>Merge sort</h2>
-*Divide and conquer algorithm*
+
+<h5>Divide and conquer algorithm</h5>
   - Divide: Dividing problems into subproblems
   - Conquer: recursively process subproblems until each one is solved
   - Combine: combine solved subproblems to give a solution into the original problem
