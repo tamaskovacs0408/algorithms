@@ -1,6 +1,6 @@
 <h1>Algorithms (JavaScript)</h1>
 
-**Binary search**
+**Binary search** ------------------------------------------
 
 Runtime complexity: **O(log n)**
 
@@ -35,7 +35,7 @@ For binary search, the array must be sorted!
 }
   ```
 
-**Selection sort**
+**Selection sort** ------------------------------------------
 
 Runtime complexity: **O(n^2)**
 
