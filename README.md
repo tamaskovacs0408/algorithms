@@ -41,5 +41,10 @@ Runtime complexity: **O(n^2)**
 
 With the first for loop we traverse through the array, and at the same time a nested loop also started to comparing each value to the starting value (beginning with our first loop's initial index.) If we find a lower value, we set that new value as our new lowest value to be compared against, and continue pushing. Each time we traverse through the array and find the next lowest value. It could be done by reverse order too.
 
-  - The function takes an array as argument.
+  - The function takes an array as argument
   - The first loop stop at *array.length - 1*, because the nested loop starts by comparing *i* with its neighbour *(i + 1)*
+  - Create *minIndex* variable for the current smallest element of the array. It sets *i* as a temporary measue
+  - The second (nested) loop set to compare the values
+    - If the *j* (*i + 1*) is smaller than the *minIndex* (*i*), the *minIndex* value is change to *j* (They're swapping)
+    - After the loop completes (the lowest value found in the unsorted section of the array) we swap into it's proper place `[a, b] = [b, a]` syntax.
+  - At the end we return the (sorted) array
