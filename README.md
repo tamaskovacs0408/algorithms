@@ -33,3 +33,4 @@ For binary search, the array must be sorted!
 }
   ```
 
+***Selection sort***
