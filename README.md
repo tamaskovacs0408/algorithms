@@ -77,4 +77,18 @@ As we move through the array, each value will be compared to the previous and sw
   - The loop starts at index 1 (instead of 0), because we compare each element to the previous to see if the swapping is necessary
   - Create `j` variable and set it to `i` value
   - The `while` loop traverse *backward* the array. It runs until `j > 0` and `array[j] < array[j - 1]` (value of array[j] is less than array[j] - 1)
-  - 
+  - It swaps values until the starting element has been inserted into its proper place
+  - The function returns the (sorted) array
+
+```js
+  function insertionSort(array) {
+  for (let i = 1; i < array.length; i++) {
+    let j = i;
+    while (j > 0 && array[j] < array[j - 1]) {
+      [array[j - 1], array[j]] = [array[j], array[j - 1]];
+      j--;
+    }
+  }
+  return array;
+}
+```
