@@ -70,3 +70,11 @@ With the first for loop we traverse through the array, and at the same time a ne
 Runtime complexity: **O(n^2)**
 *Efficient for small data sets*
 
+As we move through the array, each value will be compared to the previous and swapping places with each one until it will be at its proper place.
+
+  - The function takes an array as argument
+  - The `for` loop iterates through the entire array (forward)
+  - The loop starts at index 1 (instead of 0), because we compare each element to the previous to see if the swapping is necessary
+  - Create `j` variable and set it to `i` value
+  - The `while` loop traverse *backward* the array. It runs until `j > 0` and `array[j] < array[j - 1]` (value of array[j] is less than array[j] - 1)
+  - 
