@@ -101,3 +101,29 @@ Space complexity: **O(n)**
 
 The algorithm repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
 The only advantage of bubble sorting is its checking if an array is sorted.
+
+  - Function takes an array as argument
+  - Create `isSorted` variable and set it to `false`
+  - The `while` loop is running until `!isSorted`
+  - Every time the loop begins, `isSorted` is set to `true`
+  - Insert a `for` loop with 0 index start, and length - 1 end
+  - Compares every element to the next element (i + 1)
+  - With the end of the loop set the `isSorted` back to `false`
+  - Return the (sorted) array
+
+```js
+  function bubbleSort(array) {
+  let isSorted = false;
+  while (!isSorted) {
+    isSorted = true;
+    for (let i = 0; i < array.length - 1; i++) {
+      if (array[i] > array[i + 1]) {
+        [array[i], array[i + 1]] = [array[i + 1], array[i]];
+        isSorted = false;
+      }
+    }
+  }
+  return array;
+}
+```
+
