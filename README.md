@@ -66,3 +66,7 @@ With the first for loop we traverse through the array, and at the same time a ne
 ```
 
 <h2>Insertion sort</h2>
+
+Runtime complexity: **O(n^2)**
+*Efficient for small data sets*
+
