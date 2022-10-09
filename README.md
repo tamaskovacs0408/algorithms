@@ -11,4 +11,25 @@ For binary search, the array must be sorted!
     - But if the value is smaller than the middleIndex, the firstIndex will be middleIndex + 1
     - The middleIndex is always set to be to the 'middle' of the array after every check
     - If the middleIndex not equals to the value, the function return -1, else it returns the middleIndex (The actual index of the given value
+  ```js
+   function binarySearch(array, value) {
+  let firstIndex = 0;
+  let lastIndex = array.length - 1;
+  let middleIndex = Math.floor((firstIndex + lastIndex) / 2);
+
+    while(array[middleIndex] !== value && firstIndex < lastIndex)
+    {
+      if (value < array[middleIndex])
+        {
+            lastIndex = middleIndex - 1;
+        } 
+      else if (value > array[middleIndex])
+        {
+            firstIndex = middleIndex + 1;
+        }
+        middleIndex = Math.floor((firstIndex + lastIndex) / 2);
+    }
+  return (array[middleIndex] !== value) ? -1 : middleIndex;
+}
+  ```
 
