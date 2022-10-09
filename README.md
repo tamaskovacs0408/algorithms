@@ -92,3 +92,11 @@ As we move through the array, each value will be compared to the previous and sw
   return array;
 }
 ```
+
+<h2>Bubble sort</h2>
+
+Runtime complexity: **O(n^2)**
+Space complexity: **O(n)**
+*Least efficient*
+
+The algorithm repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
