@@ -100,4 +100,4 @@ Space complexity: **O(n)**
 *Least efficient*
 
 The algorithm repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
-https://res.cloudinary.com/practicaldev/image/fetch/s--qlwQIX9a--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/n88vputubqojk2meg0w1.gif
+([bubble sort](https://res.cloudinary.com/practicaldev/image/fetch/s--qlwQIX9a--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/n88vputubqojk2meg0w1.gif)
