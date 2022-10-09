@@ -100,3 +100,4 @@ Space complexity: **O(n)**
 *Least efficient*
 
 The algorithm repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+The only advantage of bubble sorting is its checking if an array is sorted.
