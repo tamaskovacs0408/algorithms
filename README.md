@@ -140,6 +140,18 @@ Time complexity: **O(nLog)**
 
 Merge sort is recursively dividing an array into two halves, sorting and then merging them.
 
+The algorithm has two parts(two functions): mergeSort(separate the arrays) and merge(merge the separated arrays).
+1. mergeSort:
+   - Takes an array as argument
+   - If the array contains only one element, returns the array
+   - Declare 3 variables: 
+     1. `middle` for the middle element of the array 
+     2. `left` for the "left side" of the separated array (from the first element to the middle element)
+     3. `right` for the "right side" of the separated array (from the middle element to the end of the array)
+   -  
+
+
+
 ```js
   function mergeSort(array) {
   if (array.length === 1) return array;
