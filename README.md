@@ -149,7 +149,9 @@ The algorithm has two parts(two functions): mergeSort(separate the arrays) and m
 2. merge:
    - Merge function is a callback function. Takes two arguments from the mergeSort, `left` and `right`(The two 'sides' of the separated array)
    - Declares 3 variables, `result` as an empty array, `leftIndex` and `rightIndex` both set to `0`
-   - 
+   - The while loop runs until the `leftIndex` (0) is smaller than the length of the `left` array AND the `rightIndex` (0) is smaller than the `right` array
+   - If the element in the `left` array (on the actual index) is smaller than the element in the `right` we push the element into the `result` array
+   - It returns the result array
 
 ```js
 function mergeSort(array) {
