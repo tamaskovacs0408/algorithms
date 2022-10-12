@@ -181,3 +181,6 @@ function merge(left, right) {
   return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 }
 ```
+<h2>Breadth-First Search</h2>
+
+Breadth-first search is a traversing algorithm that is used for searching or traversing the tree or graph data structure layer by layer. Before moving on to the children node of the next depth level, it visits each node that exists at the current depth.
