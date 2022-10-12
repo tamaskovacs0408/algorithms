@@ -190,3 +190,5 @@ Breadth-first search algorithm steps:
   - Remove those nodes from the queue that are visited and mark them
   - Add all of its neighbour nodes in the queue
   - Repeat until the queue becomes empty or the objective get reached
+
+Breadth-first search traverses *trees* from left to right, then moves from top to bottom (parent node to child note), ensuring that all the nodes that are present on current depth are visited.
