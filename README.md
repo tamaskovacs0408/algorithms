@@ -184,3 +184,9 @@ function merge(left, right) {
 <h2>Breadth-First Search</h2>
 
 Breadth-first search is a traversing algorithm that is used for searching or traversing the tree or graph data structure layer by layer. Before moving on to the children node of the next depth level, it visits each node that exists at the current depth.
+
+Breadth-first search algorithm steps:
+  - Choose a node and create a queue with all of its neighbour nodes
+  - Remove those nodes from the queue that are visited and mark them
+  - Add all of its neighbour nodes in the queue
+  - Repeat until the queue becomes empty or the objective get reached
