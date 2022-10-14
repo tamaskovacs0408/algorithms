@@ -192,3 +192,5 @@ Breadth-first search algorithm steps:
   - Repeat until the queue becomes empty or the objective get reached
 
 Breadth-first search traverses *trees* from left to right, then moves from top to bottom (parent node to child note), ensuring that all the nodes that are present on current depth are visited.
+
+The `createGraph` function is creating a graph and adding nodes to it. The first `for` loop runs till the and of the graph (here is 5). The second `for` loop is for the two-dimensional array to represent the graph-edges set to `0`.
