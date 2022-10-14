@@ -13,4 +13,15 @@ const createGraph = (nodes) => {
       graph[i][j] = 0;
     }
   }
+};
+
+const addEdge = (a, b) => {
+  for (let i = 0; i < graph.length; i++) {
+    for (let j = 0; j < graph[i].length; j++) {
+      if (i === a && j === b) {
+        graph[i][j] = 1;
+        graph[j][i] = 1;
+      }
+    }
+  }
 }
