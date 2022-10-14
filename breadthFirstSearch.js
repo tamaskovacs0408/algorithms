@@ -24,4 +24,13 @@ const addEdge = (a, b) => {
       }
     }
   }
+};
+
+const breadthFirstSearch = (node) => {
+  const queue = [];
+  for (let i = 0; i < visited.length; i++) {
+    visited[i] = false;
+  }
+  visited[node] = true;
+  queue.push(node);
 }
