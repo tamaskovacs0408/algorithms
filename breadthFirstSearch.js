@@ -33,4 +33,16 @@ const breadthFirstSearch = (node) => {
   }
   visited[node] = true;
   queue.push(node);
+  
+  while (queue.length) {
+    let currentNode = queue.shift();
+
+    console.log(`Visiting ${currentNode}`);
+    for (let j = 0; j < graph[currentNode]; j++) {
+      if (graph[currentNode][j] === 1 && visited[j] === false) {
+        visited[j] = true;
+        queue.push(j);
+      }
+    }
+  }
 }
