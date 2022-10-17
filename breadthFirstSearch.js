@@ -7,7 +7,7 @@ const createGraph = (nodes) => {
   for (let i = 0; i < graph.length; i++) {
     graph[i] = new Array(nodes);
   }
-  
+
   for (let i = 0; i < graph.length; i++) {
     for (let j = 0; j < graph[i]; j++) {
       graph[i][j] = 0;
@@ -33,7 +33,7 @@ const breadthFirstSearch = (node) => {
   }
   visited[node] = true;
   queue.push(node);
-  
+
   while (queue.length) {
     let currentNode = queue.shift();
 
@@ -45,4 +45,4 @@ const breadthFirstSearch = (node) => {
       }
     }
   }
-}
+};
