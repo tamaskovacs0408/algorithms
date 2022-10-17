@@ -196,3 +196,5 @@ Breadth-first search traverses *trees* from left to right, then moves from top t
 The `createGraph` function is creating a graph and adding nodes to it. The first `for` loop runs till the and of the graph (here is 5). The second `for` loop is for the graph (two-dimensional array) to represent the graph-edges set to `0`.
 
 The `addEdge` function accepts two arguments, `a` and `b`. The function is checking the edge between two nodes. If an edge is found between two nodes, then the function replaces the `0` entry with `1` in the created graph (two-dimensional array). Adding `1` is represents that the nodes has an edge between them.
+
+Finally create the `breadthFirstSearch` function which takes the `nodes` as argument. Create the `queue` as an empty `array` and mark all of the `nodes` as `false` with a for loop. Then the first `node` that added as argument to the function is marked as `visited` (`visited[node] = true`). The node is pushed to the `queue` (`queue.push(node)`)
