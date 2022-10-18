@@ -183,6 +183,8 @@ function merge(left, right) {
 ```
 <h2>Breadth-First Search</h2>
 
+Runtime complexity: **O(V + E)**
+
 Breadth-first search is a traversing algorithm that is used for searching or traversing the tree or graph data structure layer by layer. Before moving on to the children node of the next depth level, it visits each node that exists at the current depth.
 
 Breadth-first search algorithm steps:
@@ -199,3 +201,55 @@ The `addEdge` function accepts two arguments, `a` and `b`. The function is check
 
 Finally create the `breadthFirstSearch` function which takes the `nodes` as argument. Create the `queue` as an empty `array` and mark all of the `nodes` as `false` with a for loop. Then the first `node` that added as argument to the function is marked as `visited` (`visited[node] = true`). The node is pushed to the `queue` (`queue.push(node)`) and the `while` loop will execute till the length of the `queue` whick is checking the edges of the `currentNode` with the remaining `node`.
 Inside the second `for` loop the `if` condition check the edges between the `currentNode` and the remaining `j` nodes. In case, if both nodes have an edge between them and the corresponding `j` node is not visited yet, then it will be marked as `visited` and pushed to the `queue`. 
+
+```js
+let graph;
+const nodes = 5;
+let visited = new Array(nodes);
+
+const createGraph = (nodes) => {
+  graph = new Array(nodes);
+  for (let i = 0; i < graph.length; i++) {
+    graph[i] = new Array(nodes);
+  }
+
+  for (let i = 0; i < graph.length; i++) {
+    for (let j = 0; j < graph[i]; j++) {
+      graph[i][j] = 0;
+    }
+  }
+};
+
+const addEdge = (a, b) => {
+  for (let i = 0; i < graph.length; i++) {
+    for (let j = 0; j < graph[i].length; j++) {
+      if (i === a && j === b) {
+        graph[i][j] = 1;
+        graph[j][i] = 1;
+      }
+    }
+  }
+};
+
+const breadthFirstSearch = (node) => {
+  const queue = [];
+  for (let i = 0; i < visited.length; i++) {
+    visited[i] = false;
+  }
+  visited[node] = true;
+  queue.push(node);
+
+  while (queue.length) {
+    let currentNode = queue.shift();
+
+    console.log(`Visiting ${currentNode}`);
+    for (let j = 0; j < graph[currentNode]; j++) {
+      if (graph[currentNode][j] === 1 && visited[j] === false) {
+        visited[j] = true;
+        queue.push(j);
+      }
+    }
+  }
+};
+
+```
