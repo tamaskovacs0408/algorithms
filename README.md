@@ -185,7 +185,7 @@ function merge(left, right) {
 
 Runtime complexity: **O(V + E)**
 
-Breadth-first search is a traversing algorithm that is used for searching or traversing the tree or graph data structure layer by layer. Before moving on to the children node of the next depth level, it visits each node that exists at the current depth.
+Breadth-first search is a traversing algorithm that is used for searching or traversing the tree or graph data structure layer by layer. It begins at the root node, then explores all nodes from left to right, level by level. The Breadth-First Search allows the First In, First Out principle, and it can be implemented with a queue.
 
 ```js
 class Node {
