@@ -187,6 +187,11 @@ Runtime complexity: **O(V + E)**
 
 Breadth-first search is a traversing algorithm that is used for searching or traversing the tree or graph data structure layer by layer. It begins at the root node, then explores all nodes from left to right, level by level. The Breadth-First Search allows the First In, First Out principle, and it can be implemented with a queue.
 
+  - The function takes a root, which is defined as `class Node`
+  - In the function create the `result` array and the `queue` with the `root` element
+  - The `while` loop runs till the `queue` length is greater than 0
+  - 
+
 ```js
 class Node {
   constructor(value) {
